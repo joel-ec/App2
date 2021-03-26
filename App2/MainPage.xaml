@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.MainPage"
+             BackgroundColor="LightBlue">
+
+    <StackLayout>
+        <Frame BackgroundColor="Black" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to Joe's_App!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        
+        <Label Text="Welcome to Visualization Of Data" FontSize="Title" BackgroundColor="Red" Padding="30,10,30,10"/>
+        <Label Text="Visualize the labour Force Population Data for Quarter 2 2018, Nigeria" FontSize="16" Padding="30,0,30,0"/>
+        <Label FontSize="16" Padding="30,24,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Learn more at "/>
+                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        
+        
+        <Button Text="Visualize_Your_Data" BackgroundColor="Blue" Clicked="Handle_Clicked" />
+        <Button Text="About Me" BackgroundColor="Red" Clicked="Handle_Clicked1"/>
+        <Button Text="Data_At_A_Glance" BackgroundColor="Blue" Clicked="Handle_Clicked2"/>
+
+    </StackLayout>
+
+</ContentPage>
